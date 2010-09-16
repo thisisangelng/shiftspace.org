@@ -1,0 +1,129 @@
+/*   
+Theme Name: ShiftSpace
+Theme URI: 
+Description: ShiftSpace 1.0 Website
+Author: Angel Ng, Mushon Zer-Aviv
+Author URI: http://www.shiftspace.org
+Template: thematic
+Version: 1.0
+Tags: Thematic, ShiftSpace
+.
+ShiftSpace Orange: #f63b02
+Text Light: #B3ADA5
+Text Dark: #74665a
+.
+*/
+
+/* Apply Blueprint CSS into Thematic */
+@import url('../shiftspace/css/blueprint/screen.css');
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+body {
+  margin: 0 auto;
+  font-family: helvetica neue, arial, sans-serif;
+}
+
+#wrapper {
+  margin: 0 auto;
+}
+
+#header {
+  background:transparent url(images/header_gradient.png) repeat scroll bottom left;
+}
+
+#branding {
+  padding:15px 0 10px;
+}
+
+#access {
+  border-bottom: none;
+  font-size:13px;
+  margin-top:-61px;
+}
+
+/*-- Logo and Description --*/
+
+#blog-title a {
+  background:transparent url(images/shiftspace_logo.png) no-repeat scroll top left;
+  text-indent:-1500px;
+  display: block;
+  height:100px;
+  text-transform:lowercase;
+}
+
+#blog-description {
+  color: #B3ADA5;
+  font-family: georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  margin: -30px 0 0 93px;
+}
+
+/*-- Nav Menu --*/
+
+.sf-menu {
+  border: none;
+  background-color: transparent;
+  margin:-2px 0 0 150px;
+  font-weight:500;
+}
+
+.sf-menu a {
+  border: none;
+  color: #B3ADA5;
+  text-transform: uppercase;
+}
+
+.sf-menu li {
+  background: transparent;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+  background: transparent;
+  border-bottom-color: transparent;
+  color: #74665a;
+}
+
+/*-- Main Content --*/
+
+body.home #wrapper {
+  background:transparent url(images/home_bg.png) no-repeat scroll center top;
+}
+
+/*-- Footer --*/
+
+#footer {
+  background:transparent url(images/footer_gradient.png) repeat scroll top left;
+  height: 30px;
+  border: none;
+  margin-top: 165px;
+}
+
+#siteinfo {
+  color: #B3ADA5;
+  font-size: 11px;
+  line-height: 18px;
+  padding: 5px 0 5px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+
