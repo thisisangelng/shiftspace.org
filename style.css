@@ -83,10 +83,10 @@ body {
   border: none;
   background-color: transparent;
   margin:-2px 0 0 150px;
-  font-weight:500;
+  font-weight: bold;
 }
 
-.sf-menu a {
+.sf-menu a, .sf-menu a:visited  {
   border: none;
   color: #B3ADA5;
   text-transform: uppercase;
@@ -102,16 +102,73 @@ body {
   color: #74665a;
 }
 
+#header div#install{
+  float: right;
+}
+
+#header div#install a{
+  text-decoration: none;
+}
+
 /*-- Main Content --*/
 
 body.home #wrapper {
   background:transparent url(images/home_bg.png) no-repeat scroll center top;
 }
 
+body.home #shiftBox {
+  width: 960px;
+  margin: 0 auto;
+  height: 300px;
+  padding-top: 200px;
+  text-align: center;
+  }
+  
+  body.home #shiftBox label {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b3ada5;
+    display: block;
+  }
+  
+  body.home #shiftBox {
+  
+  }
+  
+  body.home #shiftBox input[type='text'] {
+    background:url("images/shift_box.png") top center;
+    border:0 none;
+    color:#4B423A;
+    font-size:16px;
+    padding:10px;
+    width:504px;
+    border-radius: 5px; 
+    -ms-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+  }
+  
+  body.home #shiftBox input[type='text']:focus {
+    background-position: bottom; 
+  }
+  
+  body.home #shiftBox #hook{
+    display: block;
+    margin: 130px auto 0;
+    width: 100px;
+    height: 200px;
+    background: url(images/hook.png) no-repeat center 30px;
+    color:#B3ADA5;
+    display:block;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-decoration: none;
+  }
+
 /*-- Footer --*/
 
 #footer {
-  background:transparent url(images/footer_gradient.png) repeat scroll top left;
+  background: url(images/footer_gradient.png) repeat scroll top left;
   height: 30px;
   border: none;
   margin-top: 165px;
@@ -127,3 +184,59 @@ body.home #wrapper {
 }
 
 
+/* ¤ Buttons ============================================== */
+
+
+.SSButtonMajor{
+   background-color: #f63b02;
+   color:#fff;
+   border:2px #b52b01 solid;
+   -moz-border-radius: 11px;
+   -webkit-border-radius: 11px;
+   padding:1px 10px 1px 9px;
+   font-weight:bold;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-size: 11px;
+   text-transform: uppercase;
+}
+
+.SSButtonMajor.SSSecondary{
+   background: none;
+   border:2px #f63b02 solid;
+   color: #f63b02;
+}
+
+.SSButtonMajor.SSDeemphasized{
+   background: none;
+   border:2px #cac5be solid;
+   color: #74665a;
+}
+
+.SSButtonMinor{
+   background: none;
+   border: 0;
+   color: #f63b02;
+   text-decoration: underline;
+   padding:2px 5px 1px 4px;
+   font-size: 11px;
+   font-weight: bold;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.SSButtonMinor.SSDeemphasized{
+   padding:1px 5px 0 4px;
+   font-weight: normal;
+   text-align: left;
+   color: #4B423A;
+   text-decoration: none;
+}
+
+.SSButtonMajor:hover,
+.SSButtonMinor:hover
+{
+	cursor: pointer;
+}
+
+div.panelButtons{
+    margin-top: 10px;
+}
