@@ -53,10 +53,15 @@ body {
   padding:15px 0 10px;
 }
 
+#menu{
+  width: auto;
+}
+
 #access {
-  border-bottom: none;
+  border-bottom:medium none;
   font-size:13px;
-  margin-top:-61px;
+  margin:-61px auto 0;
+  width:960px;
 }
 
 /*-- Logo and Description --*/
@@ -104,10 +109,13 @@ body {
 
 #header div#install{
   float: right;
+  padding-top: 4px;
 }
 
 #header div#install a{
   text-decoration: none;
+  font-size: 12px;
+  color: #B3ADA5;
 }
 
 /*-- Main Content --*/
